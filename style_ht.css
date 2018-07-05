@@ -30,4 +30,33 @@ clear: both;
 }
 
 
+.menu li {
+	float:left;
+	width: 25%;
+}
 
+
+
+
+/*.form {
+	height: 40px;
+	width: 200px;
+	border: 1px solid #2c71b8;
+}
+
+
+.glass {
+	width: 30px;
+	height: 30px;
+	background: #2c71b8;
+	text-align: center;
+	line-height: 30px;
+}
+
+.basket {
+	width: 40px;
+	height: 40px;
+	background: white;
+	text-align: center;
+	line-height: 40px;
+}*/
