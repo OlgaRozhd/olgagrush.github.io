@@ -1,4 +1,4 @@
-
+* {box-sizing: border-box;}
 
 body {background-image: url(img/patt.png);
 }
@@ -12,15 +12,14 @@ body {background-image: url(img/patt.png);
 	margin:0 auto;
 }
 
-
-[class*="col-"] {
-	float:left;
-}
-
 .row:after,.menu:after {
 content: "";
 display: block;
 clear: both;
+}
+
+[class*="col-"] {
+	float:left;
 }
 
 .col-md-3 {width: 25%;
@@ -33,6 +32,11 @@ clear: both;
 .menu li {
 	float:left;
 	width: 25%;
+	border-left: 1px solid #2c71b8;
+}
+
+.menu li:last-child {
+	border-right: 1px solid #2c71b8;
 }
 
 .menu li a {
@@ -42,7 +46,20 @@ clear: both;
 	text-decoration: none;
 	color: #2c71b8;
 	font-size: 21px;
+	text-align: center;
 }
+
+.menu li a:hover {
+	background: #2c71b8;
+	color:white;
+
+} 
+
+
+
+
+
+
 
 
 /*.form {
