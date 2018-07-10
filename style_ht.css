@@ -12,7 +12,7 @@ body {background-image: url(img/patt.png);
 	margin:0 auto;
 }
 
-.row:after,.menu:after {
+.row:after,.menu:after, ul:after {
 content: "";
 display: block;
 clear: both;
@@ -28,8 +28,17 @@ clear: both;
 .col-md-6 {width: 50%;
 }
 
+.col-md-9 {width: 75%;
+	padding-left: 30px;
+}
 
-.menu li {
+ul {
+    display: block;
+    list-style-type: none;
+}
+
+ul.menu > li {
+	position: relative;
 	float:left;
 	width: 25%;
 	border-left: 1px solid #2c71b8;
@@ -52,24 +61,44 @@ clear: both;
 .menu li a:hover {
 	background: #2c71b8;
 	color:white;
-
 } 
 
+ul.submenu {
+    display: none;
+    position: absolute;
+    width: 200%;
+}
+
+ul.submenu > li > a {
+  display: block;
+	      height: 40px;
+	      text-decoration: none;
+	      background: #2c71b8;
+	      color:white;
+	      text-align: center;
+	      line-height: 40px; 
+	      font-size: 21px;    
+}
+
+ul.submenu > li > a:hover {
+    background: white;
+	color:#2c71b8;
+}
+
+ul.menu > li:hover > ul.submenu {
+    display: block;
+}
 
 
 
-
-
-
-
-/*.form {
+.form  {
 	height: 40px;
-	width: 200px;
+	width: 90%;
 	border: 1px solid #2c71b8;
 }
 
 
-.glass {
+.glass  {
 	width: 30px;
 	height: 30px;
 	background: #2c71b8;
@@ -78,9 +107,19 @@ clear: both;
 }
 
 .basket {
-	width: 40px;
+width: 40px;
 	height: 40px;
+	background-image: url(img/basket.png);
 	background: white;
-	text-align: center;
+	/*text-align: center;
 	line-height: 40px;
-}*/
+*/}
+
+.basket_img {
+
+	background-image: url(img/basket.png);
+	background-repeat: no-repeat;
+}
+
+
+
